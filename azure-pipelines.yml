@@ -30,7 +30,7 @@ stages:
     pool:
       name: myAgentPool
       # vmImage: 'Ubuntu-16.04'
-    environment: 'production'
+    environment: 'TEST'
     strategy:
       runOnce:
         deploy:
