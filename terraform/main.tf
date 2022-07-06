@@ -5,6 +5,7 @@ provider "azurerm" {
   client_secret   = "${var.client_secret}"
   features {}
 }
+
 terraform {
   backend "azurerm" {
     storage_account_name = "storage200382"
@@ -13,11 +14,7 @@ terraform {
     key                  = "terraform.tfstate"
   }
 }
-# module "resource_group" {
-#   source               = "./modules/resource_group"
-#   resource_group       = "${var.resource_group}"
-#   location             = "${var.location}"
-# }
+
 module "network" {
   source               = "./modules/network"
   address_space        = "${var.address_space}"
@@ -51,4 +48,15 @@ module "publicip" {
   application_type = "${var.application_type}"
   resource_type    = "publicip"
   resource_group   = "${var.resource_group}"
+}
+
+module "vm" {
+  source               = "./modules/vm"
+  name                 = "vm-for-qa"
+  location             = "${var.location}"
+  application_type     = "${var.application_type}"
+  resource_group       = "${var.resource_group}"
+  public_ip_address_id = "${module.publicip.public_ip_address_id}"
+  subnet_id            = "${module.network.subnet_id_test}"
+  admin_username       = "${var.admin_username}"
 }

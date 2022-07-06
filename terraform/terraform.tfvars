@@ -13,3 +13,7 @@ application_type = "webApp"
 virtual_network_name = "virtualnetwork200382"
 address_space = ["10.5.0.0/16"]
 address_prefix_test = "10.5.1.0/24"
+
+# VM
+admin_username = "azuredevops"
+
