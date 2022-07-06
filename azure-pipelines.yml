@@ -9,11 +9,11 @@ stages:
       name: myAgentPool
     steps:
     # Needed for Terraform VM deployment
-    # - task: InstallSSHKey@0
-    #   inputs:
-    #     knownHostsEntry: 'KNOWN_HOSTS_STRING'
-    #     sshPublicKey: 'PUBLIC_KEY'
-    #     sshKeySecureFile: 'id_rsa'
+    - task: InstallSSHKey@0
+      inputs:
+        knownHostsEntry: 'KNOWN_HOSTS_STRING'
+        sshPublicKey: 'PUBLIC_KEY'
+        sshKeySecureFile: 'id_rsa'
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI'
       inputs:
@@ -28,6 +28,7 @@ stages:
   jobs:
   - deployment: FakeRestAPI
     pool:
+      name: myAgentPool
       vmImage: 'Ubuntu-16.04'
     environment: 'TEST'
     strategy:
@@ -42,11 +43,10 @@ stages:
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   - deployment: VMDeploy
-    displayName: NAME
+    displayName: Deploy VM
     environment:
-      name:  ENVIRONMENT NAME
+      name:  TEST
       resourceType: VirtualMachine
-      tags: TAG NAME
     strategy:
       runOnce:
         deploy:
