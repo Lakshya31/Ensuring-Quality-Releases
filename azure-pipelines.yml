@@ -1,20 +1,26 @@
 name: Azure Pipelines
+
 variables:
   python.version: '3.7.6'
   azureServiceConnectionId: 'myserviceconn200382'
+
 stages:
+
 - stage: Build
   jobs:
   - job: Build
     pool:
       name: myAgentPool
     steps:
+
     # Needed for Terraform VM deployment
     # - task: InstallSSHKey@0
     #   inputs:
     #     knownHostsEntry: 'KNOWN_HOSTS_STRING'
     #     sshPublicKey: 'PUBLIC_KEY'
     #     sshKeySecureFile: 'id_rsa'
+
+    # Archive FakeRestAPI to a zip file
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI'
       inputs:
@@ -25,6 +31,7 @@ stages:
     - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip
       displayName: 'Upload Package'
       artifact: drop-fakerestapi
+
 - stage:
   jobs:
   - deployment: FakeRestAPI

@@ -21,7 +21,7 @@ resource "azurerm_linux_virtual_machine" "lvm" {
 
   admin_ssh_key {
   username   = var.admin_username
-  public_key = file("/home/vsts/work/_temp/id_rsa.pub")
+  public_key = file("${var.public_key_path}")
   }
 
   os_disk {

@@ -17,3 +17,9 @@ address_prefix_test = "10.5.1.0/24"
 # VM
 admin_username = "azuredevops"
 
+# public key in azure pipelines
+#public_key_path = "/home/vsts/work/_temp/myKey.pub"
+
+# public key on Windows local machine
+public_key_path = "C:\Users\lakshya.sharma/.ssh/id_rsa.pub"
+
