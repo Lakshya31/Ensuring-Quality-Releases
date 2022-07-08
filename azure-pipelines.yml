@@ -157,7 +157,7 @@ stages:
     - task: CmdLine@2
       displayName: Install Newman
       inputs:
-        script: 'sudo npm install -g newman'
+        script: 'sudo npm install -g newman newman-reporter-junitfull'
         workingDirectory: $(System.DefaultWorkingDirectory)
     # Run Regression Suite
     - task: CmdLine@2
