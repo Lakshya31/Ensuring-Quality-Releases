@@ -1,0 +1,283 @@
+2022-07-08 21:14:28,975 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-07-08 21:14:28,987 INFO o.a.j.JMeter: Loading user properties from: C:\bin\apache-jmeter-5.5\apache-jmeter-5.5\bin\user.properties
+2022-07-08 21:14:28,988 INFO o.a.j.JMeter: Loading system properties from: C:\bin\apache-jmeter-5.5\apache-jmeter-5.5\bin\system.properties
+2022-07-08 21:14:28,997 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-07-08 21:14:28,997 INFO o.a.j.JMeter: Version 5.5
+2022-07-08 21:14:28,997 INFO o.a.j.JMeter: java.version=1.8.0_311
+2022-07-08 21:14:28,997 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-07-08 21:14:28,997 INFO o.a.j.JMeter: os.name=Windows 10
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: os.arch=amd64
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: os.version=10.0
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: java.awt.headless=true
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-07-08 21:14:28,998 INFO o.a.j.JMeter: Available Processors =8
+2022-07-08 21:14:29,002 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-07-08 21:14:29,002 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-07-08 21:14:29,003 INFO o.a.j.JMeter: JMeterHome=C:\bin\apache-jmeter-5.5\apache-jmeter-5.5
+2022-07-08 21:14:29,003 INFO o.a.j.JMeter: user.dir  =C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance
+2022-07-08 21:14:29,004 INFO o.a.j.JMeter: PWD       =C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance
+2022-07-08 21:14:29,005 INFO o.a.j.JMeter: IP: 192.168.122.188 Name: BNGECO-L-87162 FullName: BNGECO-L-87162.asia-pac.shell.com
+2022-07-08 21:14:29,022 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport'
+2022-07-08 21:14:29,024 INFO o.a.j.s.FileServer: Default base='C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance'
+2022-07-08 21:14:29,025 INFO o.a.j.s.FileServer: Set new base='C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter'
+2022-07-08 21:14:29,131 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-07-08 21:14:29,143 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-07-08 21:14:29,147 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-07-08 21:14:29,152 INFO o.a.j.s.SaveService: Loading file: automatedtesting\jmeter\Stress_Test.jmx
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-07-08 21:14:29,198 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-07-08 21:14:29,414 INFO o.a.j.JMeter: Creating summariser <summary>
+2022-07-08 21:14:29,419 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2022-07-08 21:14:29,419 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: automatedtesting/jmeter/stressresults.jtl
+2022-07-08 21:14:29,419 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\bin\apache-jmeter-5.5\apache-jmeter-5.5\bin\reportgenerator.properties
+2022-07-08 21:14:29,420 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2022-07-08 21:14:29,425 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2022-07-08 21:14:29,430 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2022-07-08 21:14:29,431 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2022-07-08 21:14:29,438 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,439 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,440 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,440 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,440 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-08 21:14:29,442 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-08 21:14:29,442 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2022-07-08 21:14:29,442 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2022-07-08 21:14:29,443 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-08 21:14:29,443 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2022-07-08 21:14:29,443 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2022-07-08 21:14:29,457 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-07-08 21:14:29,458 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-08 21:14:29,459 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-08 21:14:29,467 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-07-08 21:14:29,467 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-07-08 21:14:29,738 INFO o.a.j.JMeter: Running test (1657295069738)
+2022-07-08 21:14:29,778 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Stress Test
+2022-07-08 21:14:29,778 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Stress Test.
+2022-07-08 21:14:29,778 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-08 21:14:29,778 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=1 delayedStart=false
+2022-07-08 21:14:29,786 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-1
+2022-07-08 21:14:29,802 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-2
+2022-07-08 21:14:29,814 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = BNGECO-L-87162
+2022-07-08 21:14:29,821 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-3
+2022-07-08 21:14:29,824 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-07-08 21:14:29,826 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-07-08 21:14:29,826 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-07-08 21:14:29,826 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-07-08 21:14:29,827 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-07-08 21:14:29,840 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-07-08 21:14:29,840 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-07-08 21:14:29,841 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-4
+2022-07-08 21:14:29,861 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-5
+2022-07-08 21:14:29,881 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-6
+2022-07-08 21:14:29,899 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-7
+2022-07-08 21:14:29,920 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-8
+2022-07-08 21:14:29,941 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-9
+2022-07-08 21:14:29,960 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-10
+2022-07-08 21:14:29,979 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-11
+2022-07-08 21:14:30,000 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-12
+2022-07-08 21:14:30,019 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-13
+2022-07-08 21:14:30,041 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-14
+2022-07-08 21:14:30,059 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-15
+2022-07-08 21:14:30,079 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-16
+2022-07-08 21:14:30,082 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2022-07-08 21:14:30,091 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2022-07-08 21:14:30,091 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2022-07-08 21:14:30,101 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-17
+2022-07-08 21:14:30,119 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-18
+2022-07-08 21:14:30,153 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-19
+2022-07-08 21:14:30,160 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-20
+2022-07-08 21:14:30,180 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-21
+2022-07-08 21:14:30,202 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-22
+2022-07-08 21:14:30,220 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-23
+2022-07-08 21:14:30,242 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-24
+2022-07-08 21:14:30,263 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-25
+2022-07-08 21:14:30,280 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-26
+2022-07-08 21:14:30,300 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-27
+2022-07-08 21:14:30,320 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-28
+2022-07-08 21:14:30,339 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-29
+2022-07-08 21:14:30,360 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-30
+2022-07-08 21:14:30,380 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-31
+2022-07-08 21:14:30,399 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-32
+2022-07-08 21:14:30,419 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-33
+2022-07-08 21:14:30,439 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-34
+2022-07-08 21:14:30,459 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-35
+2022-07-08 21:14:30,479 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-36
+2022-07-08 21:14:30,499 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-37
+2022-07-08 21:14:30,520 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-38
+2022-07-08 21:14:30,540 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-39
+2022-07-08 21:14:30,560 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-40
+2022-07-08 21:14:30,579 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-41
+2022-07-08 21:14:30,599 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-42
+2022-07-08 21:14:30,619 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-43
+2022-07-08 21:14:30,639 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-44
+2022-07-08 21:14:30,659 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-45
+2022-07-08 21:14:30,681 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-46
+2022-07-08 21:14:30,700 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-47
+2022-07-08 21:14:30,724 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2022-07-08 21:14:30,729 INFO o.a.j.u.SSLManager: KeyStore created OK
+2022-07-08 21:14:30,729 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2022-07-08 21:14:30,737 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-48
+2022-07-08 21:14:30,753 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-49
+2022-07-08 21:14:30,765 INFO o.a.j.t.JMeterThread: Thread started: Stress Test 1-50
+2022-07-08 21:14:33,114 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-47
+2022-07-08 21:14:33,115 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-47
+2022-07-08 21:14:33,115 INFO o.a.j.r.Summariser: summary +      1 in 00:00:03 =    0.3/s Avg:  3089 Min:  3089 Max:  3089 Err:     0 (0.00%) Active: 50 Started: 50 Finished: 0
+2022-07-08 21:14:33,120 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-13
+2022-07-08 21:14:33,120 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-13
+2022-07-08 21:14:33,128 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-17
+2022-07-08 21:14:33,128 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-17
+2022-07-08 21:14:33,128 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-49
+2022-07-08 21:14:33,130 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-45
+2022-07-08 21:14:33,130 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-45
+2022-07-08 21:14:33,132 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-49
+2022-07-08 21:14:33,143 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-41
+2022-07-08 21:14:33,143 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-32
+2022-07-08 21:14:33,143 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-41
+2022-07-08 21:14:33,144 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-39
+2022-07-08 21:14:33,144 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-39
+2022-07-08 21:14:33,144 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-9
+2022-07-08 21:14:33,144 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-9
+2022-07-08 21:14:33,145 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-32
+2022-07-08 21:14:33,145 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-11
+2022-07-08 21:14:33,146 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-11
+2022-07-08 21:14:33,147 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-26
+2022-07-08 21:14:33,147 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-42
+2022-07-08 21:14:33,147 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-42
+2022-07-08 21:14:33,145 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-3
+2022-07-08 21:14:33,149 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-3
+2022-07-08 21:14:33,147 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-26
+2022-07-08 21:14:33,190 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-25
+2022-07-08 21:14:33,190 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-46
+2022-07-08 21:14:33,190 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-25
+2022-07-08 21:14:33,190 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-46
+2022-07-08 21:14:33,204 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-40
+2022-07-08 21:14:33,204 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-40
+2022-07-08 21:14:33,208 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-8
+2022-07-08 21:14:33,208 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-8
+2022-07-08 21:14:33,222 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-44
+2022-07-08 21:14:33,223 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-44
+2022-07-08 21:14:33,225 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-1
+2022-07-08 21:14:33,226 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-1
+2022-07-08 21:14:33,235 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-12
+2022-07-08 21:14:33,235 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-5
+2022-07-08 21:14:33,235 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-12
+2022-07-08 21:14:33,235 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-5
+2022-07-08 21:14:33,250 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-4
+2022-07-08 21:14:33,250 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-35
+2022-07-08 21:14:33,250 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-4
+2022-07-08 21:14:33,250 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-35
+2022-07-08 21:14:33,257 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-29
+2022-07-08 21:14:33,257 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-29
+2022-07-08 21:14:33,293 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-27
+2022-07-08 21:14:33,293 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-27
+2022-07-08 21:14:33,318 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-24
+2022-07-08 21:14:33,318 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-24
+2022-07-08 21:14:33,320 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-18
+2022-07-08 21:14:33,320 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-18
+2022-07-08 21:14:33,329 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-30
+2022-07-08 21:14:33,329 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-30
+2022-07-08 21:14:33,334 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-43
+2022-07-08 21:14:33,334 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-43
+2022-07-08 21:14:33,342 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-21
+2022-07-08 21:14:33,343 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-21
+2022-07-08 21:14:33,363 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-37
+2022-07-08 21:14:33,364 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-37
+2022-07-08 21:14:33,363 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-16
+2022-07-08 21:14:33,364 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-16
+2022-07-08 21:14:33,392 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-48
+2022-07-08 21:14:33,392 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-48
+2022-07-08 21:14:33,404 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-38
+2022-07-08 21:14:33,404 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-33
+2022-07-08 21:14:33,405 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-38
+2022-07-08 21:14:33,405 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-33
+2022-07-08 21:14:33,464 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-14
+2022-07-08 21:14:33,465 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-14
+2022-07-08 21:14:33,470 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-36
+2022-07-08 21:14:33,471 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-36
+2022-07-08 21:14:33,483 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-2
+2022-07-08 21:14:33,484 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-2
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-7
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-20
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-22
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-7
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-20
+2022-07-08 21:14:33,499 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-22
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-34
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-23
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-6
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-34
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-31
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-31
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-19
+2022-07-08 21:14:33,531 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-19
+2022-07-08 21:14:33,532 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-6
+2022-07-08 21:14:33,533 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-23
+2022-07-08 21:14:33,701 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-28
+2022-07-08 21:14:33,702 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-28
+2022-07-08 21:14:33,746 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-50
+2022-07-08 21:14:33,747 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-50
+2022-07-08 21:14:34,433 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-10
+2022-07-08 21:14:34,434 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-10
+2022-07-08 21:14:34,602 INFO o.a.j.t.JMeterThread: Thread is done: Stress Test 1-15
+2022-07-08 21:14:34,603 INFO o.a.j.t.JMeterThread: Thread finished: Stress Test 1-15
+2022-07-08 21:14:34,604 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-07-08 21:14:34,608 INFO o.a.j.r.Summariser: summary +     49 in 00:00:01 =   32.8/s Avg:  3080 Min:  2371 Max:  4541 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+2022-07-08 21:14:34,608 INFO o.a.j.r.Summariser: summary =     50 in 00:00:05 =   10.3/s Avg:  3080 Min:  2371 Max:  4541 Err:     0 (0.00%)
+2022-07-08 21:14:34,609 INFO o.a.j.JMeter: Generating Dashboard
+2022-07-08 21:14:34,610 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2022-07-08 21:14:34,637 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2022-07-08 21:14:34,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2022-07-08 21:14:34,806 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2022-07-08 21:14:34,810 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2022-07-08 21:14:34,810 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2022-07-08 21:14:34,817 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2022-07-08 21:14:34,823 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2022-07-08 21:14:34,823 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2022-07-08 21:14:34,823 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2022-07-08 21:14:34,844 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2022-07-08 21:14:34,845 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2022-07-08 21:14:34,846 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2022-07-08 21:14:34,846 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2022-07-08 21:14:34,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2022-07-08 21:14:34,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 350 samples
+2022-07-08 21:14:34,861 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2022-07-08 21:14:34,861 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2022-07-08 21:14:34,861 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2022-07-08 21:14:34,862 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2022-07-08 21:14:34,862 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2022-07-08 21:14:34,862 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2022-07-08 21:14:34,864 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 750 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 150 samples
+2022-07-08 21:14:34,865 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 50 samples
+2022-07-08 21:14:34,867 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 50 samples produced in 156ms on channel 0
+2022-07-08 21:14:34,867 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2022-07-08 21:14:35,112 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2022-07-08 21:14:35,112 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2022-07-08 21:14:35,113 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2022-07-08 21:14:35,114 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2022-07-08 21:14:35,115 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport\statistics.json
+2022-07-08 21:14:35,185 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2022-07-08 21:14:35,189 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport
+2022-07-08 21:14:35,397 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport, creating folder structure
+2022-07-08 21:14:35,402 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\bin\apache-jmeter-5.5\apache-jmeter-5.5\bin\report-template' to 'C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport', got message: C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport, found non empty folder with following content [C:\Users\lakshya.sharma\Desktop\Reskilling\5_Azure\Project_3\lakshya_quality_assurance\automatedtesting\jmeter\stressreport\statistics.json], will be ignored
+2022-07-08 21:14:36,456 INFO o.a.j.JMeter: Dashboard generated

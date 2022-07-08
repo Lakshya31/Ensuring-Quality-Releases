@@ -1,0 +1,60 @@
+newman
+
+Data Validation Suite
+
+→ GET All Posts
+  GET https://jsonplaceholder.typicode.com/posts [200 OK, 28.61kB, 526ms]
+  √  Structure Verification of posts
+
+→ GET Post
+  GET https://jsonplaceholder.typicode.com/posts/90 [200 OK, 1.33kB, 614ms]
+  √  Structure Verification of post
+
+→ GET Comments
+  GET https://jsonplaceholder.typicode.com/posts/90/comments [200 OK, 2.55kB, 101ms]
+  √  Structure Verification of comments
+  √  Test to verify correct post ID
+
+→ GET Comments
+  GET https://jsonplaceholder.typicode.com/comments?postId=90 [200 OK, 2.53kB, 595ms]
+  √  Structure Verification of comments
+  √  Test to verify correct post ID
+
+→ Create Post
+  POST https://jsonplaceholder.typicode.com/posts [201 Created, 1.24kB, 643ms]
+  √  Structure Verification of post
+  √  Test to verify correct data
+
+→ PUT Post
+  PUT https://jsonplaceholder.typicode.com/posts/90 [200 OK, 1.15kB, 607ms]
+  √  Structure Verification of post
+  √  Test to verify correct data
+
+→ PATCH Post
+  PATCH https://jsonplaceholder.typicode.com/posts/90 [200 OK, 1.29kB, 619ms]
+  √  Structure Verification of post
+  √  Test to verify correct data
+
+→ DELETE Post
+  DELETE https://jsonplaceholder.typicode.com/posts/90 [200 OK, 1.04kB, 595ms]
+  √  Response to be an empty object
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   8 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                  16 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   8 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                  13 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 5s                                             │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 31.05kB (approx)                              │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 537ms [min: 101ms, max: 643ms, s.d.: 167ms] │
+└────────────────────────────────────────────────────────────────────┘

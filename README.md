@@ -29,13 +29,13 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 ###To run API Tests:
 - Install npm
 - Install newman using `npm install -g newman`
-- Run `newman run ".\automatedtesting\postman\Regression Suite.postman_collection.json" --insecure`
-- Run `newman run ".\automatedtesting\postman\Data Validation Suite.postman_collection.json" --insecure`
+- Run `newman run ".\automatedtesting\postman\RegressionSuite.postman_collection.json" --insecure`
+- Run `newman run ".\automatedtesting\postman\DataValidationSuite.postman_collection.json" --insecure`
 
 ###To run Performance Tests:
 - Install Jmeter
 - Run `jmeter -n -t automatedtesting/jmeter/Endurance_Test.jmx -l automatedtesting/jmeter/enduranceresults.jtl -e -o automatedtesting/jmeter/endurancereport`
-- Run `jmeter -n -t automatedtesting/jmeter/Stress_Test.jmx -l automatedtesting/jmeter/enduranceresults.jtl -e -o automatedtesting/jmeter/endurancereport`
+- Run `jmeter -n -t automatedtesting/jmeter/Stress_Test.jmx -l automatedtesting/jmeter/stressresults.jtl -e -o automatedtesting/jmeter/stressreport`
 
 ###To trigger pipeline:
 - Push a commit to master branch

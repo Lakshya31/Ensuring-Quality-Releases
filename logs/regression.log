@@ -1,0 +1,55 @@
+newman
+
+Regression Suite
+
+→ GET All Posts
+  GET https://jsonplaceholder.typicode.com/posts [200 OK, 28.61kB, 704ms]
+  √  Status code is 200
+
+→ GET Post
+  GET https://jsonplaceholder.typicode.com/posts/100 [200 OK, 1.32kB, 637ms]
+  √  Status code is 200
+
+→ GET Comments
+  GET https://jsonplaceholder.typicode.com/posts/100/comments [200 OK, 2.57kB, 105ms]
+  √  Status code is 200
+
+→ GET Comments
+  GET https://jsonplaceholder.typicode.com/comments?postId=100 [200 OK, 2.56kB, 178ms]
+  √  Status code is 200
+
+→ Create Post
+  POST https://jsonplaceholder.typicode.com/posts [201 Created, 1.25kB, 600ms]
+  √  Status code is 200
+
+→ PUT Post
+  PUT https://jsonplaceholder.typicode.com/posts/100 [200 OK, 1.15kB, 569ms]
+  √  Status code is 200
+
+→ PATCH Post
+  PATCH https://jsonplaceholder.typicode.com/posts/100 [200 OK, 1.29kB, 829ms]
+  √  Status code is 200
+
+→ DELETE Post
+  DELETE https://jsonplaceholder.typicode.com/posts/100 [200 OK, 1.04kB, 893ms]
+  √  Status code is 200
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   8 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                  16 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   8 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                   8 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 5.2s                                           │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 31.08kB (approx)                              │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 564ms [min: 105ms, max: 893ms, s.d.: 265ms] │
+└────────────────────────────────────────────────────────────────────┘

@@ -5,6 +5,6 @@ node_modules/
 .terraform/
 
 #jmeter reports
-endurance_test_report/
-stress_test_report/
-
+endurancereport/
+stressreport/
+*.jtl
