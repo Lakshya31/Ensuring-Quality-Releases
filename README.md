@@ -1,5 +1,7 @@
 # Quality Assurance using CI/CD
 
+[![Build Status](https://dev.azure.com/odluser200497/ensure-quality-releases/_apis/build/status/Lakshya31.azure-ci-cd-qa?branchName=master)](https://dev.azure.com/odluser200497/ensure-quality-releases/_build/latest?definitionId=1&branchName=master)
+
 This project implements IaC (Infrastructure as Code) using Terraform to deploy azure app services.
 
 There is an Azure Pipeline implemented in the project which deploys code into the given app service, and performs Load Testing, UI Testing & API Testing.
@@ -39,3 +41,73 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 
 ###To trigger pipeline:
 - Push a commit to master branch
+
+###Proof through Screenshots:
+
+- Successful Pipeline Run:
+
+![image](./screenshots/Pipeline_Run_Overview.PNG)
+
+- Build Stage
+
+![image](./screenshots/Build_Stage_Overview.PNG)
+
+- Terraform Apply Logs
+
+![image](./screenshots/Terraform_Apply_Logs_Pipeline.PNG)
+
+- Selenium UI Test
+
+![image](./screenshots/Selenium_Logs_Pipeline.PNG)
+
+- Endurance Test
+
+![image](./screenshots/Endurance_Test_Logs_Pipeline.PNG)
+
+- Stress Test
+
+![image](./screenshots/Stress_Test_Logs_Pipeline.PNG)
+
+- Regression Test
+
+![image](./screenshots/Regression_API_Testing_Logs_Pipeline.PNG)
+
+- Data Validation Test
+
+![image](./screenshots/Data_Validation_API_Testing_Logs_Pipeline.PNG)
+
+- Artifacts uploaded by Pipeline:
+
+![image](./screenshots/Artifacts_Pipeline.PNG)
+
+- Regression Testing Graphs
+
+![image](./screenshots/Regression_API_Testing_Graphs.PNG)
+
+- Data Validation Testing Graphs
+
+![image](./screenshots/Data_Validation_API_Testing_Graphs.PNG)
+
+- Endurance Testing Dashboard
+
+![image](./screenshots/Endurance_Test_Report_From_Artifact.PNG)
+
+- Stress Testing Dashboard
+
+![image](./screenshots/Stress_Test_Report_From_Artifact.PNG)
+
+- App Service Graph after Pipeline Run
+
+![image](./screenshots/App_Service_Graphs.PNG)
+
+- Custom Logs
+
+![image](./screenshots/Custom_Logs.PNG)
+
+- Alert in Azure Portal
+
+![image](./screenshots/Alert_in_Portal.PNG)
+
+- Triggered Alert
+
+![image](./screenshots/Triggered_Alert.PNG)
