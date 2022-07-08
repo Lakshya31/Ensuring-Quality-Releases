@@ -3,3 +3,8 @@ node_modules/
 
 # Terraform init files
 .terraform/
+
+#jmeter reports
+endurance_test_report/
+stress_test_report/
+

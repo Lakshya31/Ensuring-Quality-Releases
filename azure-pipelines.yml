@@ -5,8 +5,8 @@ variables:
   azureServiceConnectionId: 'myserviceconnection'
   webAppName: 'lakshyafakerestapi'
   resourcegroupname: 'Azuredevops'
-  storageaccountname: 'mystorage'
-  containername: 'mycontainer'
+  storageaccountname: 'storage200497'
+  containername: 'container200497'
 
 stages:
 

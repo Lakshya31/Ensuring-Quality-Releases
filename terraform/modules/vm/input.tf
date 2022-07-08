@@ -10,4 +10,3 @@ variable "subnet_id" {}
 
 # VM
 variable "admin_username" {}
-variable "public_key_path" {}

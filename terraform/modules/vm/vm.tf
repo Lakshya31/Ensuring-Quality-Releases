@@ -5,10 +5,15 @@ resource "azurerm_network_interface" "test" {
 
   ip_configuration {
     name                          = "internal"
-    # subnet_id                     = var.subnet_id
+    subnet_id                     = var.subnet_id
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = var.public_ip_address_id
   }
+}
+
+resource "tls_private_key" "example_ssh" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
 }
 
 resource "azurerm_linux_virtual_machine" "lvm" {
@@ -21,7 +26,7 @@ resource "azurerm_linux_virtual_machine" "lvm" {
 
   admin_ssh_key {
   username   = var.admin_username
-  public_key = file("${var.public_key_path}")
+  public_key = tls_private_key.example_ssh.public_key_openssh
   }
 
   os_disk {
