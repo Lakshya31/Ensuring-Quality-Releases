@@ -17,12 +17,40 @@ stages:
       name: myAgentPool
     steps:
 
-    # Needed for Terraform VM deployment
-    # - task: InstallSSHKey@0
-    #   inputs:
-    #     knownHostsEntry: 'KNOWN_HOSTS_STRING'
-    #     sshPublicKey: 'PUBLIC_KEY'
-    #     sshKeySecureFile: 'id_rsa'
+    # Terraform Installation
+    - task: 'charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0'
+      displayName: "Install Terraform"
+      inputs:
+        terraformVersion: '1.1.9'
+
+    # Initialize Terraform
+    - task: 'ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2'
+      displayName: 'Terraform init'
+      inputs:
+        provider: 'azurerm'
+        command: 'init'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+        backendServiceArm: '$(azureServiceConnectionId)'
+        backendAzureRmResourceGroupName: '$(resourcegroupname)'
+        backendAzureRmStorageAccountName: '$(storageaccountname)'
+        backendAzureRmContainerName: '$(containername)'
+        backendAzureRmKey: 'terraform.tfstate'
+
+    # Terraform Plan
+    - task: 'ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2'
+      displayName: 'Terraform plan'
+      inputs:
+        command: 'plan'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+        environmentServiceNameAzureRM: '$(azureServiceConnectionId)'
+
+    # Terraform Apply
+    - task: 'ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2'
+      displayName: 'Terraform apply'
+      inputs:
+        command: 'apply'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
+        environmentServiceNameAzureRM: '$(azureServiceConnectionId)' 
 
     # Archive FakeRestAPI to a zip file
     - task: ArchiveFiles@2
@@ -36,6 +64,7 @@ stages:
       displayName: 'Upload Package'
       artifact: drop-fakerestapi
 
+# Deploying FakeRestAPI to Azure App
 - stage:
   jobs:
   - deployment: FakeRestAPI
@@ -54,27 +83,107 @@ stages:
               appName: $(webAppName)
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
-  # - deployment: VMDeploy
-  #   displayName: Deploy VM
-  #   environment:
-  #     name:  TEST
-  #     resourceType: VirtualMachine
-  #   strategy:
-  #     runOnce:
-  #       deploy:
-  #         steps:
-  #         - task: Bash@3
-  #           inputs:
-  #             targetType: 'inline'
-  #             script: |
-  #               #! /bin/bash
-                
-  #               sudo apt-get upgrade -y
-  #               sudo apt-get install python3-pip -y
-  #               sudo apt-get install unzip -y
-  #               sudo apt-get install -y chromium-browser
-  #               pip3 install selenium
-  #               export PATH=$PATH:some/path
-  #               npm install -g newman
 
+- stage: Test
+  jobs:
+  # UI Testing
+  - job: Selenium
+    pool:
+      name: myAgentPool
+    steps:
+    # Run UI Tests
+    - task: Bash@3
+      displayName: Selenium
+      inputs:
+              targetType: 'inline'
+              script: |
+                wget https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_linux64.zip
+                unzip chromedriver_linux64.zip
+                sudo mv chromedriver /usr/bin/chromedriver
+                sudo chown root:root /usr/bin/chromedriver
+                sudo chmod +x /usr/bin/chromedriver
+                python3 automatedtesting/selenium/login.py > logs.log
+                cat logs.log
+                sudo mv logs.log $(System.DefaultWorkingDirectory)/automatedtesting/selenium
+    # Archive
+    - task: ArchiveFiles@2
+      displayName: Archive Selenium
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/automatedtesting/selenium'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(System.DefaultWorkingDirectory)/selenium-$(Build.BuildId).zip'
+    
+    # Publish to Container
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: 'automatedtesting/selenium'
+        ArtifactName: 'selenium'
+        publishLocation: 'Container'
+
+  # Performance Testing
+  - job: jmeter
+    pool:
+      name: myAgentPool
+    steps:
+    # Install Jmeter
+    - task: JMeterInstaller@0
+      inputs:
+        jmeterVersion: '5.2.1'
+    # Endurance Test
+    - task: Bash@3
+      displayName: EnduranceTest
+      inputs:
+        targetType: 'inline'
+        script: jmeter -n -t automatedtesting/jmeter/Endurance_Test.jmx -l automatedtesting/jmeter/enduranceresults.jtl -e -o automatedtesting/jmeter/endurancereport
+    # Stress Test
+    - task: Bash@3
+      displayName: StressTest
+      inputs:
+        targetType: 'inline'
+        script: jmeter -n -t automatedtesting/jmeter/Stress_Test.jmx  -l automatedtesting/jmeter/stressresults.jtl -e -o automatedtesting/jmeter/stressreport
+    # Publish to Container
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: 'automatedtesting/jmeter'
+        ArtifactName: 'jmeter'
+        publishLocation: 'Container'
+  # API Testing
+  - job: Postman
+    pool:
+      name: myAgentPool
+    steps:
+    # Install Newman
+    - task: CmdLine@2
+      displayName: Install Newman
+      inputs:
+        script: 'sudo npm install -g newman'
+        workingDirectory: $(System.DefaultWorkingDirectory)
+    # Run Regression Suite
+    - task: CmdLine@2
+      displayName: Regression Tests
+      continueOnError: true
+      inputs:
+        script: 'newman run RegressionSuite.postman_collection.json -e environment.json -r cli,junitfull --reporter-junitfull-export RegressionReport.xml'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/automatedtesting/postman'
+    # Run Data Validation Suite
+    - task: CmdLine@2
+      displayName: Data Validation Tests
+      continueOnError: true
+      inputs:
+        script: 'newman run DataValidation.postman_collection.json -e environment.json -r cli,junitfull --reporter-junitfull-export DataValidationReport.xml'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/automatedtesting/postman'
+    # Publish to Container
+    - task: PublishPipelineArtifact@1
+      displayName: Publish Newman logs
+      inputs:
+        targetPath: '$(System.DefaultWorkingDirectory)/automatedtesting/postman'
+        artifactName: 'drop-newman-logs'
+    # Publish to Container
+    - task: PublishTestResults@2
+      displayName: Publish Postman Test Result
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(System.DefaultWorkingDirectory)/automatedtesting/postman/*.xml'
+    
 
