@@ -49,7 +49,7 @@ stages:
       displayName: 'Terraform apply'
       inputs:
         command: 'apply'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         environmentServiceNameAzureRM: '$(azureServiceConnectionId)' 
 
     # Archive FakeRestAPI to a zip file
