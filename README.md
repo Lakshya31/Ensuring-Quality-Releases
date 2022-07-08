@@ -28,7 +28,8 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 ###To run API Tests:
 - Install npm
 - Install newman using `npm install -g newman`
-- Run `newman run StarterAPIs.json`
+- Run `newman run ".\automatedtesting\postman\Regression Suite.postman_collection.json" --insecure`
+- Run `newman run ".\automatedtesting\postman\Data Validation Suite.postman_collection.json" --insecure`
 
 ###To run Load Tests:
 - Install Jmeter

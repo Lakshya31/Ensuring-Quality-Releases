@@ -2,7 +2,11 @@ name: Azure Pipelines
 
 variables:
   python.version: '3.7.6'
-  azureServiceConnectionId: 'myserviceconn200382'
+  azureServiceConnectionId: 'myserviceconnection'
+  webAppName: 'Ad-AppService'
+  resourcegroupname: 'Azuredevops'
+  storageaccountname: 'mystorage'
+  containername: 'mycontainer'
 
 stages:
 
@@ -47,7 +51,7 @@ stages:
             displayName: 'Deploy Azure Web App'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
-              appName: 'webApp-AppService'
+              appName: $(webAppName)
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   # - deployment: VMDeploy
