@@ -3,7 +3,7 @@ name: Azure Pipelines
 variables:
   python.version: '3.7.6'
   azureServiceConnectionId: 'myserviceconnection'
-  webAppName: 'Ad-AppService'
+  webAppName: 'lakshyafakerestapi'
   resourcegroupname: 'Azuredevops'
   storageaccountname: 'mystorage'
   containername: 'mycontainer'
