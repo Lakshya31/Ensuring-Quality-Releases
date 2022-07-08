@@ -65,7 +65,7 @@ stages:
       artifact: drop-fakerestapi
 
 # Deploying FakeRestAPI to Azure App
-- stage:
+- stage: Deploy
   jobs:
   - deployment: FakeRestAPI
     pool:

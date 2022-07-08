@@ -17,12 +17,13 @@ There is an Azure Pipeline implemented in the project which deploys code into th
     client_id
     client_secret
     tenant_id
+- Configure variables in `./terraform/terraform.tfvars`
 
 ###To run UI Tests:
 - Install Python 3.7
 - Install pip
 - Install selenium using `pip install selenium` preferably in a virtual environment.
-- Run `python <path to login.py>`
+- Run `python <path to ui_tests.py>`
 
 
 ###To run API Tests:
@@ -31,9 +32,10 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 - Run `newman run ".\automatedtesting\postman\Regression Suite.postman_collection.json" --insecure`
 - Run `newman run ".\automatedtesting\postman\Data Validation Suite.postman_collection.json" --insecure`
 
-###To run Load Tests:
+###To run Performance Tests:
 - Install Jmeter
-- Run ``
+- Run `jmeter -n -t automatedtesting/jmeter/Endurance_Test.jmx -l automatedtesting/jmeter/enduranceresults.jtl -e -o automatedtesting/jmeter/endurancereport`
+- Run `jmeter -n -t automatedtesting/jmeter/Stress_Test.jmx -l automatedtesting/jmeter/enduranceresults.jtl -e -o automatedtesting/jmeter/endurancereport`
 
 ###To trigger pipeline:
 - Push a commit to master branch
