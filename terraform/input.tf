@@ -16,5 +16,4 @@ variable address_space {}
 
 #VM
 variable "admin_username" {}
-variable "public_key_path" {}
 

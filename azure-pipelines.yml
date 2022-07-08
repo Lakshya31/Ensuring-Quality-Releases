@@ -185,5 +185,5 @@ stages:
       inputs:
         testResultsFormat: 'JUnit'
         testResultsFiles: '$(System.DefaultWorkingDirectory)/automatedtesting/postman/*.xml'
-    
+
 

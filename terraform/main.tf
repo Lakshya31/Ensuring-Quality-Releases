@@ -59,5 +59,4 @@ module "vm" {
   public_ip_address_id = "${module.publicip.public_ip_address_id}"
   subnet_id            = "${module.network.subnet_id_test}"
   admin_username       = "${var.admin_username}"
-  public_key_path      = "${var.public_key_path}"
 }
