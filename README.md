@@ -1,6 +1,6 @@
 # Quality Assurance using CI/CD
 
-[![Build Status](https://dev.azure.com/odluser200497/ensure-quality-releases/_apis/build/status/Lakshya31.azure-ci-cd-qa?branchName=master)](https://dev.azure.com/odluser200497/ensure-quality-releases/_build/latest?definitionId=1&branchName=master)
+
 
 This project implements IaC (Infrastructure as Code) using Terraform to deploy azure app services.
 
@@ -31,8 +31,8 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 ###To run API Tests:
 - Install npm
 - Install newman using `npm install -g newman`
-- Run `newman run ".\automatedtesting\postman\RegressionSuite.postman_collection.json" --insecure`
-- Run `newman run ".\automatedtesting\postman\DataValidationSuite.postman_collection.json" --insecure`
+- Run `newman run ".\automatedtesting\postman\RegressionSuite.postman_collection.json" -e .\automatedtesting\postman\env.json --insecure`
+- Run `newman run ".\automatedtesting\postman\DataValidationSuite.postman_collection.json" -e .\automatedtesting\postman\env.json --insecure`
 
 ###To run Performance Tests:
 - Install Jmeter
