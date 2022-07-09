@@ -100,9 +100,13 @@ There is an Azure Pipeline implemented in the project which deploys code into th
 
 ![image](./screenshots/App_Service_Graphs.PNG)
 
-- Custom Logs
+- Custom Logs Setup
 
 ![image](./screenshots/Custom_Logs.PNG)
+
+- Custom Logs
+
+![image](./screenshots/Custom_Logs_in_Log_Analytics.PNG)
 
 - Alert in Azure Portal
 
