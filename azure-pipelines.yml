@@ -102,9 +102,8 @@ stages:
                 sudo mv chromedriver /usr/bin/chromedriver
                 sudo chown root:root /usr/bin/chromedriver
                 sudo chmod +x /usr/bin/chromedriver
-                python3 automatedtesting/selenium/ui_tests.py > logs.log
-                cat logs.log
-                sudo mv logs.log $(System.DefaultWorkingDirectory)/automatedtesting/selenium
+                python3 automatedtesting/selenium/ui_tests.py
+                sudo mv selenium_log.txt $(System.DefaultWorkingDirectory)/automatedtesting/selenium
     # Archive
     - task: ArchiveFiles@2
       displayName: Archive Selenium
