@@ -11,7 +11,8 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 # Start the browser and login with standard_user
 def login(user, password):
     try:
-        print('Starting the browser...')
+        print(datetime.now(timezone.utc).strftime(
+            "%Y-%m-%d %H:%M:%S  "),'Starting the browser...')
         # --uncomment when running in Azure DevOps.
         options = ChromeOptions()
         options.add_argument("--headless")
