@@ -1,6 +1,4 @@
 # #!/usr/bin/env python
-from asyncio.log import logger
-from datetime import datetime, timezone
 import logging
 import traceback
 from selenium import webdriver
@@ -79,13 +77,11 @@ def addtocart():
 
         logging.info("Clicking on Add to cart for each item")
         for item in itemNames:
-            logging.info(datetime.now(timezone.utc).strftime(
-                "%Y-%m-%d %H:%M:%S  ") + "Clicking on Add to cart for item: {}".format(item.text))
+            logging.info("Clicking on Add to cart for item: {}".format(item.text))
             addToCartElement = driver.find_element(
                 By.XPATH, "//*[text()='{}']/ancestor::*[3]//button[text()='Add to cart']".format(item.text))
             addToCartElement.click()
-            logging.info(datetime.now(timezone.utc).strftime(
-                "%Y-%m-%d %H:%M:%S  ") + "Successfully Clicked on Add to cart for item: {}".format(item.text))
+            logging.info("Successfully Clicked on Add to cart for item: {}".format(item.text))
         logging.info("Successfully Added all Items to Cart!")
 
     except Exception as err:
@@ -109,13 +105,11 @@ def removefromcart():
         logging.info("Clicking on Remove from cart for each item")
 
         for item in itemNames:
-            logging.info(datetime.now(timezone.utc).strftime(
-                "%Y-%m-%d %H:%M:%S  ") + "Clicking on Remove from cart for item: {}".format(item.text))
+            logging.info("Clicking on Remove from cart for item: {}".format(item.text))
             addToCartElement = driver.find_element(
                 By.XPATH, "//*[text()='{}']/ancestor::*[3]//button[text()='Remove']".format(item.text))
             addToCartElement.click()
-            logging.info(datetime.now(timezone.utc).strftime(
-                "%Y-%m-%d %H:%M:%S  ") + "Successfully Clicked on Remove from cart for item: {}".format(item.text))
+            logging.info("Successfully Clicked on Remove from cart for item: {}".format(item.text))
         logging.info("Successfully Removed all Items from Cart!")
 
     except Exception as err:

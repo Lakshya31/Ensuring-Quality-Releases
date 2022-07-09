@@ -1,0 +1,41 @@
+2022-07-10 00:45:11,804 Starting the browser...
+2022-07-10 00:45:13,115 Browser started successfully. Navigating to the demo page to login.
+2022-07-10 00:45:14,554 Finding Username Input Box
+2022-07-10 00:45:14,562 Entering Username in Input Box
+2022-07-10 00:45:14,663 Entered Username in Input Box!
+2022-07-10 00:45:14,663 Finding Password Input Box
+2022-07-10 00:45:14,676 Entering Password in Input Box
+2022-07-10 00:45:14,758 Entered Password in Input Box!
+2022-07-10 00:45:14,758 Clicking on Login
+2022-07-10 00:45:14,880 Successfully Logged in as user: standard_user!
+2022-07-10 00:45:14,888 Locating all Items
+2022-07-10 00:45:14,903 Clicking on Add to cart for each item
+2022-07-10 00:45:14,918 2022-07-09 19:15:14  Clicking on Add to cart for item: Sauce Labs Backpack
+2022-07-10 00:45:14,973 2022-07-09 19:15:14  Successfully Clicked on Add to cart for item: Sauce Labs Backpack
+2022-07-10 00:45:14,983 2022-07-09 19:15:14  Clicking on Add to cart for item: Sauce Labs Bike Light
+2022-07-10 00:45:15,039 2022-07-09 19:15:15  Successfully Clicked on Add to cart for item: Sauce Labs Bike Light
+2022-07-10 00:45:15,048 2022-07-09 19:15:15  Clicking on Add to cart for item: Sauce Labs Bolt T-Shirt
+2022-07-10 00:45:15,103 2022-07-09 19:15:15  Successfully Clicked on Add to cart for item: Sauce Labs Bolt T-Shirt
+2022-07-10 00:45:15,114 2022-07-09 19:15:15  Clicking on Add to cart for item: Sauce Labs Fleece Jacket
+2022-07-10 00:45:15,162 2022-07-09 19:15:15  Successfully Clicked on Add to cart for item: Sauce Labs Fleece Jacket
+2022-07-10 00:45:15,172 2022-07-09 19:15:15  Clicking on Add to cart for item: Sauce Labs Onesie
+2022-07-10 00:45:15,216 2022-07-09 19:15:15  Successfully Clicked on Add to cart for item: Sauce Labs Onesie
+2022-07-10 00:45:15,225 2022-07-09 19:15:15  Clicking on Add to cart for item: Test.allTheThings() T-Shirt (Red)
+2022-07-10 00:45:15,268 2022-07-09 19:15:15  Successfully Clicked on Add to cart for item: Test.allTheThings() T-Shirt (Red)
+2022-07-10 00:45:15,268 Successfully Added all Items to Cart!
+2022-07-10 00:45:15,273 Locating all Items
+2022-07-10 00:45:15,283 Clicking on Remove from cart for each item
+2022-07-10 00:45:15,288 2022-07-09 19:15:15  Clicking on Remove from cart for item: Sauce Labs Backpack
+2022-07-10 00:45:15,330 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Sauce Labs Backpack
+2022-07-10 00:45:15,341 2022-07-09 19:15:15  Clicking on Remove from cart for item: Sauce Labs Bike Light
+2022-07-10 00:45:15,404 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Sauce Labs Bike Light
+2022-07-10 00:45:15,415 2022-07-09 19:15:15  Clicking on Remove from cart for item: Sauce Labs Bolt T-Shirt
+2022-07-10 00:45:15,458 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Sauce Labs Bolt T-Shirt
+2022-07-10 00:45:15,465 2022-07-09 19:15:15  Clicking on Remove from cart for item: Sauce Labs Fleece Jacket
+2022-07-10 00:45:15,523 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Sauce Labs Fleece Jacket
+2022-07-10 00:45:15,528 2022-07-09 19:15:15  Clicking on Remove from cart for item: Sauce Labs Onesie
+2022-07-10 00:45:15,586 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Sauce Labs Onesie
+2022-07-10 00:45:15,590 2022-07-09 19:15:15  Clicking on Remove from cart for item: Test.allTheThings() T-Shirt (Red)
+2022-07-10 00:45:15,638 2022-07-09 19:15:15  Successfully Clicked on Remove from cart for item: Test.allTheThings() T-Shirt (Red)
+2022-07-10 00:45:15,638 Successfully Removed all Items from Cart!
+2022-07-10 00:45:15,670 Execution Complete!
